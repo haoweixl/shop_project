@@ -354,3 +354,50 @@ INFO 2022-02-10 11:01:57,702 autoreload 578 Watching for file changes with StatR
 WARNING 2022-02-10 11:01:59,673 log 222 Not Found: /
 WARNING 2022-02-10 11:01:59,673 basehttp 154 "GET / HTTP/1.1" 404 2209
 INFO 2022-02-10 11:02:07,499 basehttp 154 "GET /banner/ HTTP/1.1" 200 10286
+INFO 2022-02-10 14:03:25,177 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-02-10 14:03:28,492 log 222 Not Found: /
+WARNING 2022-02-10 14:03:28,493 basehttp 154 "GET / HTTP/1.1" 404 2209
+WARNING 2022-02-10 14:03:28,603 log 222 Not Found: /favicon.ico
+INFO 2022-02-10 14:03:38,046 basehttp 154 "GET /banner/ HTTP/1.1" 200 10286
+INFO 2022-02-10 14:14:24,656 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-02-10 14:14:27,009 log 222 Not Found: /
+WARNING 2022-02-10 14:14:27,010 basehttp 154 "GET / HTTP/1.1" 404 2209
+INFO 2022-02-10 14:14:33,612 basehttp 154 "GET /banner/ HTTP/1.1" 200 10286
+INFO 2022-02-10 15:16:08,971 basehttp 154 "GET /banner/ HTTP/1.1" 200 246
+INFO 2022-02-10 15:19:13,210 autoreload 203 F:\全栈学习\后端\python项目\shop_project\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2022-02-10 15:19:16,276 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 15:20:11,155 autoreload 203 F:\全栈学习\后端\python项目\shop_project\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2022-02-10 15:20:12,839 autoreload 578 Watching for file changes with StatReloader
+ERROR 2022-02-10 15:21:15,151 exception 75 Invalid HTTP_HOST header: 'api.luffycity.cn:8000'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2022-02-10 15:21:15,204 log 222 Bad Request: /banner/
+WARNING 2022-02-10 15:21:15,205 basehttp 154 "GET /banner/ HTTP/1.1" 400 74323
+INFO 2022-02-10 15:21:51,048 autoreload 578 Watching for file changes with StatReloader
+ERROR 2022-02-10 15:21:58,407 exception 75 Invalid HTTP_HOST header: 'api.luffycity.cn:8000'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2022-02-10 15:21:58,454 log 222 Bad Request: /
+WARNING 2022-02-10 15:21:58,455 basehttp 154 "GET / HTTP/1.1" 400 74765
+ERROR 2022-02-10 15:23:45,068 exception 75 Invalid HTTP_HOST header: 'api.luffycity.cn:8000'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2022-02-10 15:23:45,094 log 222 Bad Request: /
+WARNING 2022-02-10 15:23:45,094 basehttp 154 "GET / HTTP/1.1" 400 74900
+INFO 2022-02-10 15:23:45,689 autoreload 203 F:\全栈学习\后端\python项目\shop_project\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2022-02-10 15:23:47,404 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-02-10 15:23:47,955 log 222 Not Found: /
+WARNING 2022-02-10 15:23:47,956 basehttp 154 "GET / HTTP/1.1" 404 2209
+INFO 2022-02-10 15:23:57,347 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-02-10 15:24:00,803 log 222 Not Found: /
+WARNING 2022-02-10 15:24:00,803 basehttp 154 "GET / HTTP/1.1" 404 2209
+INFO 2022-02-10 15:24:09,760 basehttp 154 "GET /banner/ HTTP/1.1" 200 246
+INFO 2022-02-10 15:25:25,802 basehttp 154 "GET /banner/ HTTP/1.1" 200 246
+INFO 2022-02-10 15:34:41,958 autoreload 203 F:\全栈学习\后端\python项目\shop_project\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2022-02-10 15:34:45,441 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 15:36:11,846 autoreload 203 F:\全栈学习\后端\python项目\shop_project\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2022-02-10 15:36:13,694 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 15:36:40,029 autoreload 203 F:\全栈学习\后端\python项目\shop_project\luffyapi\luffyapi\settings\dev.py changed, reloading.
+INFO 2022-02-10 15:36:42,430 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 15:38:50,159 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 15:40:19,638 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 15:42:07,162 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 15:42:26,344 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-02-10 15:42:31,467 log 222 Not Found: /
+WARNING 2022-02-10 15:42:31,468 basehttp 154 "GET / HTTP/1.1" 404 2209
+INFO 2022-02-10 15:42:50,532 basehttp 154 "GET /banner/ HTTP/1.1" 200 246
+INFO 2022-02-10 15:45:12,186 autoreload 578 Watching for file changes with StatReloader

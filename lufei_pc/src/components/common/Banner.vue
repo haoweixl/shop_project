@@ -1,11 +1,9 @@
 <template>
-  <div class="banner">
-      <el-carousel trigger="click" height="473px">
-        <el-carousel-item v-for="banner in banner_list">
-          <a :href="banner.link"><img width="100%" :src="banner.img" alt=""></a>
-        </el-carousel-item>
-      </el-carousel>
-  </div>
+  <el-carousel height="720px" :interval="3000" arrow="always">
+    <el-carousel-item :key="key" v-for="(banner,key) in banner_list">
+      <a :href="banner.link"><img :src="banner.image_url"></a>
+    </el-carousel-item>
+  </el-carousel>
 </template>
 
 <script>
@@ -13,26 +11,41 @@ export default {
   name: 'Banner',
   data () {
     return {
-      banner_list: [
-        {link: 'http://www.baidu.com', img: '/static/banner/1.png'},
-        {link: 'http://www.baidu.com', img: '/static/banner/2.png'},
-        {link: 'http://www.baidu.com', img: '/static/banner/3.png'}
-      ]
+      banner_list: []
+    }
+  },
+  created () {
+    this.get_banner_list()
+  },
+  methods: {
+    get_banner_list () {
+      // 获取轮播广告列表
+      console.log(this.$settings.HOST)
+      this.$axios.get(`${this.$settings.HOST}/banner/`, {}).then(response => {
+        console.log(response.data)
+        this.banner_list = response.data
+      }).catch(error => {
+        console.log(error.response)
+      })
     }
   }
 }
 </script>
 
-<style>
-.el-carousel__arrow{
-  width: 100px!important;
-  height: 100px!important;
-}
-.el-icon-arrow-left{
-  font-size: 35px;
-  margin-left: 50px;
-}
-.el-carousel__arrow--left{
-  left: -50px;
-}
+<style scoped>
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
 </style>

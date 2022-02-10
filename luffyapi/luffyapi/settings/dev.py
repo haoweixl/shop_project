@@ -34,11 +34,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'api.luffycity.cn',
+    "www.luffycity.cn"
 ]
 
+
+# 允许 axios 跨域的域名
 # CORS组的配置信息
 CORS_ORIGIN_WHITELIST = (
-    'https://www.luffycity.cn:8080',
+    #'https://www.luffycity.cn:8080'
+    'http://www.luffycity.cn:8080',
 )
 CORS_ALLOW_CREDENTIALS = False# 允许ajax跨域请求时携带cookie
 
