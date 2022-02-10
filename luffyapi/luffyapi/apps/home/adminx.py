@@ -11,7 +11,7 @@ xadmin.site.register(views.BaseAdminView, BaseSetting)
 class GlobalSettings(object):
     """xadmin的全局配置"""
     site_title = "学城"  # 设置站点标题
-    site_footer = "学城有限公司"  # 设置站点的页脚
+    site_footer = "怀雅有限公司"  # 设置站点的页脚
     menu_style = "accordion"  # 设置菜单折叠
 
 xadmin.site.register(views.CommAdminView, GlobalSettings)
@@ -22,3 +22,10 @@ from .models import Banner
 class BannerInfoModelAdmin(object):
     list_display=["title","orders","is_show"]
 xadmin.site.register(Banner, BannerInfoModelAdmin)
+
+
+# 导航菜单
+from .models import Nav
+class NavModelAdmin(object):
+    list_display=["title","link","is_show","is_site","position"]
+xadmin.site.register(Nav, NavModelAdmin)

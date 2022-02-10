@@ -401,3 +401,24 @@ WARNING 2022-02-10 15:42:31,467 log 222 Not Found: /
 WARNING 2022-02-10 15:42:31,468 basehttp 154 "GET / HTTP/1.1" 404 2209
 INFO 2022-02-10 15:42:50,532 basehttp 154 "GET /banner/ HTTP/1.1" 200 246
 INFO 2022-02-10 15:45:12,186 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-02-10 15:45:16,131 log 222 Not Found: /
+WARNING 2022-02-10 15:45:16,132 basehttp 154 "GET / HTTP/1.1" 404 2209
+INFO 2022-02-10 15:45:35,615 basehttp 154 "GET /banner/ HTTP/1.1" 200 246
+INFO 2022-02-10 15:45:35,666 basehttp 154 "GET /media/banner/c2700288ee986bd05275fc6d199f1892.jpeg HTTP/1.1" 304 0
+INFO 2022-02-10 15:45:35,666 basehttp 154 "GET /media/banner/a78b92f923798a2d78ef08b656d5ffb9.jpeg HTTP/1.1" 304 0
+INFO 2022-02-10 15:46:37,299 basehttp 154 "GET /banner/ HTTP/1.1" 200 246
+INFO 2022-02-10 15:46:37,347 basehttp 154 "GET /media/banner/c2700288ee986bd05275fc6d199f1892.jpeg HTTP/1.1" 200 17591
+INFO 2022-02-10 15:46:37,347 basehttp 154 "GET /media/banner/a78b92f923798a2d78ef08b656d5ffb9.jpeg HTTP/1.1" 200 31556
+INFO 2022-02-10 16:31:32,135 autoreload 203 F:\全栈学习\后端\python项目\shop_project\luffyapi\luffyapi\apps\home\models.py changed, reloading.
+INFO 2022-02-10 16:31:34,969 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 16:57:57,424 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 17:01:48,236 autoreload 578 Watching for file changes with StatReloader
+WARNING 2022-02-10 17:01:50,519 log 222 Not Found: /
+WARNING 2022-02-10 17:01:50,520 basehttp 154 "GET / HTTP/1.1" 404 2525
+INFO 2022-02-10 17:02:04,039 basehttp 154 "GET /nav/footer HTTP/1.1" 301 0
+INFO 2022-02-10 17:02:04,125 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 9667
+INFO 2022-02-10 17:03:11,416 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 9667
+INFO 2022-02-10 17:04:43,608 autoreload 203 F:\全栈学习\后端\python项目\shop_project\luffyapi\luffyapi\apps\home\adminx.py changed, reloading.
+INFO 2022-02-10 17:04:45,452 autoreload 578 Watching for file changes with StatReloader
+INFO 2022-02-10 17:05:18,640 autoreload 203 F:\全栈学习\后端\python项目\shop_project\luffyapi\luffyapi\apps\home\adminx.py changed, reloading.
+INFO 2022-02-10 17:05:20,442 autoreload 578 Watching for file changes with StatReloader
