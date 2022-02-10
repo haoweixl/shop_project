@@ -1,12 +1,10 @@
 <template>
     <div class="footer">
       <ul>
-        <li>关于我们</li>
-        <li>联系我们</li>
-        <li>商务合作</li>
-        <li>帮助中心</li>
-        <li>意见反馈</li>
-        <li>新手指南</li>
+          <li v-for="(nav,key) in nav_list" :key="key">
+              <span v-if="nav.is_site"><a :href="nav.link">{{nav.title}}</a></span>
+              <span v-else><router-link :to="nav.link">{{nav.title}}</router-link></span>
+          </li>
       </ul>
       <p>Copyright © luffycity.com版权所有 | 京ICP备17072161号-1</p>
     </div>
@@ -14,7 +12,25 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  data () {
+    return {
+      nav_list: []
+    }
+  },
+  created () {
+    this.get_nav()
+  },
+  methods: {
+    get_nav () {
+      this.$axios.get(`${this.$settings.HOST}/nav/footer/`, {}).then(response => {
+        console.log(response.data)
+        this.nav_list = response.data
+      }).catch(error => {
+        console.log(error.response)
+      })
+    }
+  }
 }
 </script>
 
@@ -22,7 +38,7 @@ export default {
 .footer {
   width: 100%;
   height: 128px;
-  background: #25292e;
+  background: #fff;
   color: #fff;
 }
 .footer ul{
